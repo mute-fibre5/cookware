@@ -1,0 +1,338 @@
+/* Profile Page Styles */
+.profile-page {
+  padding: 2rem;
+  background: #f8f9fa;
+  min-height: calc(100vh - 80px);
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.profile-sidebar {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  height: fit-content;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  background: #f0f2f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: #666;
+}
+
+.user-details h3 {
+  margin: 0;
+  color: #333;
+}
+
+.user-details p {
+  margin: 0.5rem 0 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.profile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-nav button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: none;
+  background: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.profile-nav button:hover {
+  background: #f0f2f5;
+  color: #333;
+}
+
+.profile-nav button.active {
+  background: #dcfce7;
+  color: #15803d;
+  font-weight: 600;
+}
+
+.profile-nav button.logout-btn {
+  margin-top: 2rem;
+  color: #dc3545;
+}
+
+.profile-nav button.logout-btn:hover {
+  background: #fff5f5;
+}
+
+.profile-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profile-content h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #333;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 1rem;
+}
+
+/* Orders Section */
+.order-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.order-header {
+  background: #f8f9fa;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #333;
+  margin-right: 1rem;
+}
+
+.order-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.order-status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.order-status.processing { background: #fff3cd; color: #856404; }
+.order-status.shipped { background: #dcfce7; color: #166534; }
+.order-status.delivered { background: #d4edda; color: #155724; }
+.order-status.cancelled { background: #f8d7da; color: #721c24; }
+
+.order-items {
+  padding: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.order-item:last-child {
+  margin-bottom: 0;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h4 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
+.item-info p {
+  margin: 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.item-price {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-footer {
+  padding: 1rem 1.5rem;
+  background: #f8f9fa;
+  text-align: right;
+  border-top: 1px solid #eee;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #999;
+}
+
+.empty-state p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.empty-state button {
+  background: #15803d;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Addresses */
+.address-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.address-card {
+  border: 2px solid #eee;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.address-card.default {
+  border-color: #15803d;
+  background: #f0f7ff;
+}
+
+.address-card h4 {
+  margin: 0 0 1rem;
+}
+
+.address-card p {
+  margin: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.default-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #15803d;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.add-address-card {
+  border: 2px dashed #ccc;
+  background: none;
+  border-radius: 12px;
+  color: #777;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.add-address-card:hover {
+  border-color: #15803d;
+  color: #15803d;
+  background: #f8f9fa;
+}
+
+/* Wishlist */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.wishlist-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.wishlist-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.wishlist-card h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.wishlist-card p {
+  color: #15803d;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.wishlist-card button {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #15803d;
+  background: white;
+  color: #15803d;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.wishlist-card button:hover {
+  background: #15803d;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  .profile-container {
+    grid-template-columns: 1fr;
+  }
+}

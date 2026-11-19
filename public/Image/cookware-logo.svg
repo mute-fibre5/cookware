@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" role="img" aria-labelledby="title">
+  <title id="title">Cookware</title>
+  <g fill="none" stroke="#15803d" stroke-linecap="round" stroke-linejoin="round" stroke-width="10">
+    <circle cx="110" cy="110" r="95"/>
+    <path d="M55 125h110l-10 42H65z"/>
+    <path d="M76 111c4-26 20-43 34-43s30 17 34 43M110 68V49m0 0h29"/>
+  </g>
+  <text x="245" y="127" fill="#15803d" font-family="Arial, Helvetica, sans-serif" font-size="112" font-weight="500">Cookware</text>
+  <text x="248" y="178" fill="#15803d" font-family="Arial, Helvetica, sans-serif" font-size="34">Kitchenware · Hotel Supplies · Decor</text>
+</svg>
